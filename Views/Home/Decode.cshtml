@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Decode";
+}
+
+<h1>Decode</h1>
+
+<div class="nav-link">or @Html.ActionLink("Encode", "Encode")</div>
+
+<div class="section">
+    @Html.Label("source-text", "Source", new { @class = "header" })
+    @Html.TextArea("source-text", string.Empty, 0, 0, null)
+</div>
+
+<div class="section">
+    <div class="header">Decoding-type</div>
+    @Html.Partial("TypesList", HtmlEncoder.Controllers.DecodeController.TypesList)
+</div>
+
+<div class="section">
+    <button id="decode-button">Decode</button>
+</div>
+
+<div class="section">
+    @Html.Label("result-text", "Result", new { @class = "header" })
+    @Html.TextArea("result-text", string.Empty, 0, 0, new { @readonly = "readonly" })
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - HTML Encoder by Seb Nilsson</title>
+    <link href="~/content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/content/html5.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="app-info">
+            <header>About the "HTML Encoder":</header>
+            <p>This is an application for encoding and decoding strings for the web with the functionality in the .NET Framework.</p>
+            <p>The application is built on MVC 4 and uses Web API. <a href="http://github.com/sebnilsson/HtmlEncoder">The source code is available on GitHub.</a></p>
+            <p id="created-by">Created by <a href="http://www.sebnilsson.com/">Seb Nilsson</a> - Twitter: <a href="http://twitter.com/sebnilsson">@@sebnilsson</a></p>
+        </div>
+        <div id="main-content">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="~/content/jquery.corner.js"></script>
+    <script src="~/content/site.js"></script>
+</body>
+</html>

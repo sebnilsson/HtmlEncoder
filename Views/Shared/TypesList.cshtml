@@ -1,0 +1,15 @@
+﻿@model Dictionary<string, string>
+
+@{
+    Layout = "";
+}
+
+<div class="type-list">
+    @foreach(var item in Model.Keys) {
+        var isFirst = item == Model.Keys.First();
+        <div class="type-list-item@(isFirst ? " first" : "")">
+            @Html.Label(item.ToLowerInvariant(), item, new { @class = "radio-button-label", title = Model[item] })
+            @Html.RadioButton("types-list", item.ToLowerInvariant(), isFirst, new { id = item.ToLowerInvariant() })
+        </div>
+    }
+</div>
