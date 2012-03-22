@@ -3,34 +3,14 @@
 *.DS_Store
 
 #Visual Studio files
-*.[Oo]bj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-*.docstates
-ipch/
-obj/
+[Oo]bj
 [Bb]in
-[Dd]ebug*/
-[Rr]elease*/
-[Pp]ublish*/
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.ncb
+*.log
 
 #Tooling
 _ReSharper*/
@@ -46,12 +26,5 @@ _ReSharper*/
 # Office Temp Files
 ~$*
 
-# Custom
-*.private
-readme.html
-
-# Project-specific
-App.config
-AppSettings.config
-BloggerSettings.json
+#NuGet
 packages/
