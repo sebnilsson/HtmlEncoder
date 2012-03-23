@@ -147,7 +147,7 @@ div.section {
     border: 1px solid #000;
     float: left;
     display: inline;
-    margin: 0 6px;
+    margin: 0 2px 4px;
     padding: 2px 8px;
 }
 .type-list-item.first {
