@@ -74,6 +74,10 @@ body {
     font-family: Trebuchet MS, Arial, Serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +145,7 @@ div.section {
 .type-list-item {
     background-color: #fff;
     border: 1px solid #000;
+    float: left;
     display: inline;
     margin: 0 6px;
     padding: 2px 8px;
@@ -160,7 +165,7 @@ label.radio-button-label {
 textarea {
     border: 1px solid #000;
     font-family: Consolas,Sans-Serif;
-    height: 150px;
+    height: 120px;
     padding: 5px;
     width: 99%;
 }

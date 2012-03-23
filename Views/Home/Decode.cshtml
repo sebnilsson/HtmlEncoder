@@ -7,17 +7,18 @@
 <div class="nav-link">or @Html.ActionLink("Encode", "Encode")</div>
 
 <div class="section">
+    <div class="header">Decoding-type</div>
+    @Html.Partial("TypesList", HtmlEncoder.Controllers.DecodeController.TypesList)
+    <div class="clear"></div>
+</div>
+
+<div class="section">
     @Html.Label("source-text", "Source", new { @class = "header" })
     @Html.TextArea("source-text", string.Empty, 0, 0, null)
 </div>
 
 <div class="section">
-    <div class="header">Decoding-type</div>
-    @Html.Partial("TypesList", HtmlEncoder.Controllers.DecodeController.TypesList)
-</div>
-
-<div class="section">
-    <button id="decode-button">Decode</button>
+    <button id="decode-button">Decode It!</button>
 </div>
 
 <div class="section">
