@@ -9,6 +9,7 @@
     var sendRequest = function (button, url) {
         var $button = $(button);
         $button.attr("disabled", "disabled");
+        $button.parent().addClass("loading");
 
         var sourceText = $('#source-text').val();
         var selectedType = $('input:radio:checked').val();
@@ -19,6 +20,7 @@
         });
 
         $button.removeAttr("disabled");
+        $button.parent().removeClass("loading");
     };
 
     $('#encode-button').click(function () {
