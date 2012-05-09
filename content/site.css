@@ -173,3 +173,14 @@ textarea {
 button {
     padding: 5px 10px;
 }
+
+#button-section.loading {
+    background-image: url("/content/ajax-loader.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+#button-section.loading button {
+    visibility: hidden;
+}

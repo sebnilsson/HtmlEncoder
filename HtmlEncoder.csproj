@@ -129,6 +129,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\ajax-loader.gif" />
     <Content Include="content\html5.js" />
     <Content Include="content\jquery.corner.js" />
     <Content Include="content\site.js" />
