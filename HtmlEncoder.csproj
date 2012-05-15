@@ -130,6 +130,7 @@
     <Content Include="content\html5.js" />
     <Content Include="content\jquery.corner.js" />
     <Content Include="content\site.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="content\site.css" />
