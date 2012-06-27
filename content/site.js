@@ -15,8 +15,15 @@
         var selectedType = $('input:radio:checked').val();
 
         var data = { text: sourceText, type: selectedType };
-        $.getJSON(url, data, function (result) {
-            $('#result-text').val(result || '');
+
+        $.ajax({
+            data: data,
+            dataType: 'json',
+            type: 'POST',
+            success: function(data) {
+                $('#result-text').val(data || '');
+            },
+            url: url
         });
 
         $button.removeAttr("disabled");
