@@ -14,7 +14,7 @@ namespace HtmlEncoder.Controllers {
             string type = json.type;
             string text = json.text;
 
-            string cacheKey = string.Format("type='{0}'_text='{1}'", type, text);
+            string cacheKey = string.Format("decode_type='{0}'_text='{1}'", type, text);
 
             string decoded = GetCachedObject(cacheKey, () => {
                 Func<string, string> func;
