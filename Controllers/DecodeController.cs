@@ -6,6 +6,7 @@ using System.Web.Http;
 namespace HtmlEncoder.Controllers {
     public class DecodeController : BaseApiController {
         // GET /api/decode/?text=ABC
+        [HttpPost]
         public string Get(string type, string text) {
             string cacheKey = string.Format("type='{0}'_text='{1}'", type, text);
 
