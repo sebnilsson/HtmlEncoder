@@ -17,7 +17,7 @@ namespace HtmlEncoder {
             routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { controller = "Encode", action = "Get", id = UrlParameter.Optional }
+                defaults: new { id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
